@@ -1,0 +1,96 @@
+<!-- pratice sections ,  whole project is made using html & css 
+      made by harsh dave !! HACK-TECH ❤ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day & Night </title>
+	<style>
+	body{
+		background-color: #ccccff;
+		margin: 0;
+		overflow-y: hidden;
+		animation: sky 5.5s 2s forwards;
+	}
+	@keyframes sky{
+		50%{
+			background-color: #ffd700;
+	}
+
+		65%{
+			background-color: #ffb90f;
+	}
+
+		85%{
+			background-color: #b39800;
+	}
+
+		100%{
+			background-color:  #660066;
+	}
+}
+	img {
+		position: absolute;
+		bottom: 0px;
+	}
+	.sun{
+		background-color: #ff8c1a;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		position: absolute;
+		left: 52%;
+		box-shadow: 0px 0px 20px 5px #ff8c1a;
+		animation: sunset 12s forwards;
+	}
+@keyframes sunset{
+	100%{
+		transform: translateY(800px);
+	}
+}
+ .moon{
+ 	background-color: transparent;
+ 	height: 100px;
+ 	width: 100px;
+ 	border-radius: 50%;
+ 	box-shadow: -20px 10px white;
+ 	position: absolute;
+ 	left: 23%;
+ 	top: 5px;
+ 	opacity: 0;
+ 	animation: night 0.8s 7s forwards;
+ }
+ @keyframes night{
+ 	100%{
+ 		opacity: 1;
+ 	}
+ }
+   #hacktech{
+   	background-color: transparent;
+   	font-size: 40px;
+   	opacity: 1;	
+   	position: absolute;
+   	left:5%;
+   	top: 35px;
+   	bottom: 35px;
+   	text-decoration: underline;
+
+   }
+   .hacktech1{
+   	background-color: transparent;
+   	font-size: 40px;
+   	opacity: 1;
+   	position: absolute;
+   	left:5%;
+   	top: 72px;
+   	bottom: 35px;
+   	text-decoration: underline;
+   }
+</style>
+</head>
+<body>
+	<div class="sun"></div>
+  <div class="moon"></div>
+  <div id="hacktech">HACK-TECH<br></div ><div class="hacktech1">Day & Night</div>
+  <img src="building.png" width="100%"/>
+</body>
+</html>
